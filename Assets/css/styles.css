@@ -1,9 +1,11 @@
 * {
-    border: 1px dotted red;
+    padding: 1rem;
+    margin: 1rem;
+    border: 5px dotted red;
 }
 
 body{
-    font-size: 16px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -36,6 +38,7 @@ nav{
 
 nav a{
     text-decoration: none;
+    text-align: center;
     color: aliceblue;
     padding-left: 0.5rem;
     font-size: 24px;
@@ -44,10 +47,27 @@ nav a{
 
 main{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+main section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-start;
+    width: 95%;
+    padding: 0%;
+}
+
+/* 
+main, section, h2, p{
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-main section, h2{
+main section h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -56,4 +76,12 @@ main section, h2{
 
 main section>p{
     align-content: flex-end;
-}
+} */
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
