@@ -1,13 +1,13 @@
-/* * {
+/* Used to assist with layout and seeing where containers are. 
+* {
     border: 5px dotted red;
 } */
-
+/* Setting body layout behaviors*/
 body{
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
     background-color: antiquewhite;
     color: darkslategrey;
 }
@@ -85,8 +85,8 @@ main section{
     min-width: 300px;
     font-size: 2rem;
     text-align: end;
-    border-right: 5px solid darkblue;
-    padding: 1vmin;
+    border-right: 5px solid darkslategrey;
+    padding: 1rem;
 }
 
 .projects{
@@ -106,6 +106,7 @@ main section{
     background-image: url("../images/download.png");
     background-size: cover;
     background-position: center;
+    justify-content: flex-end;
 }
 
 #project1{
@@ -119,6 +120,7 @@ h3{
     background-color:darkslategrey;
     color:antiquewhite;
 }
+
 /* This makes the default setting of the p tag hidden until the user hovers over the sibling element h3. */
 .projects p{
     display: none;
