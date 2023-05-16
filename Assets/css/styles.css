@@ -2,14 +2,19 @@
     border: 5px dotted red;
 }
 
+:root{
+    --hidden: display:none;
+    --shown: display:unset;
+}
+
 body{
-    font-size: 24px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: lightskyblue;
-    color: black;
+    background-color: antiquewhite;
+    color: darkslategrey;
 }
 
 header{
@@ -20,7 +25,7 @@ header{
     padding: 1rem 0 0 0;
     margin: 0;
     text-align: center;
-    background-color: darkslateblue;
+    background-color: darkslategrey;
     color: antiquewhite;
 }
 
@@ -38,15 +43,23 @@ nav{
 nav a{
     text-decoration: none;
     text-align: center;
-    color: aliceblue;
+    color: antiquewhite;
     padding-left: 0.5rem;
     font-size: 2rem;
     margin: 1vh 0 0 1vw;
 }
 
+nav a :hover{
+    font-weight: bolder;
+    color: aliceblue;
+    text-size-adjust: larger;
+
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 0;
     flex-direction: column;
 
 }
@@ -68,7 +81,14 @@ h2{
 
 }
 
-main section{
+p{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(82, 34, 34);
+
+}
+
+main section, main aside{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,9 +98,41 @@ main section{
 }
 
 .main-content{
-    margin-left: 10vw;
     font-size: 2vh;
+    justify-content: space-evenly;
+    flex-flow: wrap;
 }
+
+.projects, .projects1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.projects1{
+    background-image: url("../images/download.png");
+    background-size: cover;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color:darkslategrey;
+    color:antiquewhite;
+}
+
+/* .projects p{
+    display: none;
+} */
+
+/* 
+.projects h3:hover::after
+{
+    .projects p{
+        display: var(--shown);
+    }
+} */
 
 /* 
 main, section, h2, p{
@@ -98,6 +150,18 @@ main section h2{
 main section>p{
     align-content: flex-end;
 } */
+
+.contact ul{
+    list-style: none;
+}
+
+
+footer{
+    background-color: darkslategrey;
+    color:antiquewhite;
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 768px) {
