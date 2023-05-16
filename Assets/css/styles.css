@@ -49,7 +49,7 @@ nav a{
     margin: 1vh 0 0 1vw;
 }
 
-nav a :hover{
+nav a:hover{
     font-weight: bold;
     color: white;
     text-decoration: underline;
@@ -61,6 +61,7 @@ main{
     flex-wrap: wrap;
     flex: 1 1 0;
     flex-direction: column;
+
 
 }
 
@@ -111,7 +112,6 @@ main div{
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    flex: 2 1 0;
     align-items: center;
     padding: 1rem;
     background-image: url("../images/download.png");
@@ -164,7 +164,7 @@ main section>p{
     flex-wrap: wrap;
 }
 
-.contact li{
+.contact a{
     display:flex;
     text-decoration: none;
     color:rgb(82, 34, 34);
