@@ -70,16 +70,14 @@ main section{
     display: flex;
     width: 100%;
     padding: 1rem;
-    
 }
 
 .main-content{
     flex: 1;
     font-size: 1rem;
     padding: 1rem;
-    
-    
 }
+
 /* Targets layout behavior of all headings in the main section by wrapping in div container */
 .section-heading{
     min-width: 300px;
@@ -89,10 +87,11 @@ main section{
     padding: 1rem;
 }
 
-.projects{
+.projects, .resumes{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: space-evenly;
 }
 
 /* Targeting behavior of the individual project containers inside of the projects div container */
@@ -104,9 +103,14 @@ main section{
     height: 250px;
     padding: 1rem;
     background-image: url("../images/download.png");
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     justify-content: flex-end;
+    border: 3px solid darkslategrey;
+}
+/* Adds a pinkish shadow around project border when user hovers over it. */
+.project:hover{
+    box-shadow: inset 0px 0px 8px darksalmon, 0 0 15px darksalmon;
 }
 
 #project1{
@@ -119,6 +123,12 @@ h3{
     font-size: 1rem;
     background-color:darkslategrey;
     color:antiquewhite;
+    padding: 0.5rem;
+}
+
+.resume{
+    height: 100px;
+    width: 30%;
 }
 
 /* This makes the default setting of the p tag hidden until the user hovers over the sibling element h3. */
