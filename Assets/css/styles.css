@@ -50,9 +50,9 @@ nav a{
 }
 
 nav a :hover{
-    font-weight: bolder;
-    color: aliceblue;
-    text-size-adjust: larger;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
 
 }
 
@@ -90,11 +90,15 @@ p{
 
 main section, main aside{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-items: flex-start;
     width: 95%;
     padding: 1vw;
+}
+
+main div{
+    box-sizing: border-box;
+    
 }
 
 .main-content{
@@ -103,17 +107,20 @@ main section, main aside{
     flex-flow: wrap;
 }
 
-.projects, .projects1 {
+.projects {
     display: flex;
     flex-flow: column;
+    flex-wrap: wrap;
+    flex: 2 1 0;
     align-items: center;
     padding: 1rem;
-}
-
-.projects1{
     background-image: url("../images/download.png");
     background-size: cover;
 }
+
+/* #project1{
+    width: ;
+} */
 
 h3{
     font-weight: bold;
@@ -152,21 +159,43 @@ main section>p{
 } */
 
 .contact ul{
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
 }
 
+.contact li{
+    display:flex;
+    text-decoration: none;
+    color:rgb(82, 34, 34);
+    justify-content: space-between;
+}
 
 footer{
     background-color: darkslategrey;
     color:antiquewhite;
     text-align: center;
+    margin: 0;
 }
 
-
+@media screen and (max-width: 992px) {
+    
+}
 
 @media screen and (max-width: 768px) {
     main,
     nav {
       flex-direction: column;
+
+      align-items: center;
     }
   }
+
+  @media screen and (max-width: 576px) {
+    main, header{
+        flex-direction: column;
+
+        align-items:center;
+    }
+  }
+  
