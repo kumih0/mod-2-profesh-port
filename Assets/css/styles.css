@@ -47,13 +47,10 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
 }
-main section{
-    display: flexbox;
+main section, h2{
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-main section>h2{
     align-content: flex-start;
 }
 
