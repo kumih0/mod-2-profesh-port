@@ -1,3 +1,7 @@
+* {
+    border: 1px dotted red;
+}
+
 body{
     font-size: 16px;
     display: flex;
@@ -42,4 +46,17 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+main section{
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main section>h2{
+    align-content: flex-start;
+}
+
+main section>p{
+    align-content: flex-end;
 }
