@@ -84,17 +84,18 @@ main section{
     border-right: 5px solid darkslategrey;
     padding: 1rem;
 }
+/* Adjusting space that myface div container takes up inside the main-content section in bio */
 .myface{
     max-width: 15%;
+    font-weight: bold;
 }
 .myface img{
     display: none;
     max-width: 100%;
 }
-
+/* When user hovers over "my face" area, my photo pops up */
 .myface:hover>img{
     display: flex;
-    
 }
 
 .projects, .resumes{
