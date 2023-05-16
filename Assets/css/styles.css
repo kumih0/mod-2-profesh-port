@@ -2,11 +2,6 @@
     border: 5px dotted red;
 } */
 
-:root{
-    --hidden: display:none;
-    --shown: display:unset;
-}
-
 body{
     font-size: 1rem;
     display: flex;
@@ -55,15 +50,6 @@ nav a:hover{
     text-decoration: underline;
 
 }
-/* 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1 0;
-    flex-direction: column;
-
-
-} */
 
 figure{
     background-image: url("../images/banner.JPG");
@@ -71,57 +57,55 @@ figure{
     background-position: center;
     height: 10vh;
     max-width: 100vw;
-    
-}
-
-h2{
-    font-size: 2rem;
-    text-align: end;
-    border-right: 5px solid darkblue;
-    padding: 1vmin;
-
 }
 
 /* p{
     display: flex;
     flex-wrap: wrap;
     color: rgb(82, 34, 34);
-
+    
 } */
 
 main section{
     display: flex;
     width: 100%;
     padding: 1rem;
-
+    
 }
 
 .main-content{
     flex: 1;
     font-size: 1rem;
     padding: 1rem;
-
+    
     
 }
+/* Targets layout behavior of all headings in the main section by wrapping in div container */
 .section-heading{
     min-width: 300px;
+    font-size: 2rem;
+    text-align: end;
+    border-right: 5px solid darkblue;
+    padding: 1vmin;
 }
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Targeting behavior of the individual project containers inside of the projects div container */
 .project {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
     flex: 0 0 48%;
-    align-items: center;
+    height: 250px;
     padding: 1rem;
     background-image: url("../images/download.png");
     background-size: cover;
     background-position: center;
-}
-.projects{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    height: 250px;
 }
 
 #project1{
@@ -135,38 +119,22 @@ h3{
     background-color:darkslategrey;
     color:antiquewhite;
 }
-
+/* This makes the default setting of the p tag hidden until the user hovers over the sibling element h3. */
 .projects p{
     display: none;
 }
-
+/* Using the + targeting the sibling container */
 .projects h3:hover+p
 {
         display: block;
 }
 
-/* 
-main, section, h2, p{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-main section h2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
-main section>p{
-    align-content: flex-end;
-} */
-
+/* This targets the contact section and adjusts the layout of the unordered list of links*/
 #contact ul{
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-between;
 }
 
 #contact li, #contact a{
