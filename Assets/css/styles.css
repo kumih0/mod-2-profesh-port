@@ -215,6 +215,20 @@ details[open] summary {
       flex-wrap: wrap;
       align-items: center;
     }
+    .section-heading{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        right: 95px;
+    }
+    .main-content{
+        display: flex;
+        position: relative;
+        flex-flow: wrap;
+        right: 75px;
+    }
+
     .resumes{
         flex-direction: row;
     }
