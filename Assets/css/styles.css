@@ -116,18 +116,22 @@ main section{
     padding: 1rem;
     background-image: url("../images/download.png");
     background-size:cover;
-    background-position: center;
+    background-position: center; 
     justify-content: flex-end;
     border: 3px solid darkslategrey;
 }
-/* hiding link */
-.project a{
-    text-decoration: none;
+/* hiding link while making div background-image "clickable" */
+.projects a{
+    display:contents;
 }
 
 /* Adds a pinkish shadow around project border when user hovers over it. */
 .project:hover{
     box-shadow: inset 0px 0px 8px darksalmon, 0 0 15px darksalmon;
+}
+
+.project:active{
+
 }
 
 #project1{
