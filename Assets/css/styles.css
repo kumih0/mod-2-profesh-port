@@ -233,6 +233,10 @@ details[open] summary {
     .resumes{
         flex-direction: row;
     }
+/* hides pesky details drop down on smaller screen size */
+    .resumes details{
+        display: none;
+    }
 
     #contact ul {
         display: flex;
