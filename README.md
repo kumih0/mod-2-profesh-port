@@ -33,6 +33,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
     I first wrote out the general HTML containers and entered placeholder values to get a basic layout of my website.  After creating a nav bar with the appropriate links to the relevant sections, I worked on my CSS file to adjust the layout of the sections. I used CSS pseudo-classes to target the respective div classes to use the same properties across multiple tags. I created a responsive web design by using media query and rem units in my CSS.
 
 # Screenshot of Website
+<img width="1709" alt="Screen Shot 2023-05-16 at 11 37 22 PM" src="https://github.com/kumih0/mod-2-profesh-port/assets/132851569/5ca882d6-cec0-48e4-8f68-2e9a66c3083c">
+<img width="1709" alt="Screen Shot 2023-05-16 at 11 37 27 PM" src="https://github.com/kumih0/mod-2-profesh-port/assets/132851569/568a1a8e-5eed-443d-bea8-531ead0da974">
+
 
 # Live Link
 https://kumih0.github.io/mod-2-profesh-port/
