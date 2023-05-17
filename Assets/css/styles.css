@@ -120,6 +120,11 @@ main section{
     justify-content: flex-end;
     border: 3px solid darkslategrey;
 }
+
+.project a{
+    text-decoration: none;
+}
+
 /* Adds a pinkish shadow around project border when user hovers over it. */
 .project:hover{
     box-shadow: inset 0px 0px 8px darksalmon, 0 0 15px darksalmon;
