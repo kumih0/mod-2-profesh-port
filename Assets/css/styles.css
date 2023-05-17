@@ -130,10 +130,6 @@ main section{
     box-shadow: inset 0px 0px 8px darksalmon, 0 0 15px darksalmon;
 }
 
-.project:active{
-
-}
-
 #project1{
     flex: 1 0 100%;
     height: 300px;
@@ -154,11 +150,11 @@ h3{
 }
 
 /* This makes the default setting of the p tag hidden until the user hovers over the sibling element h3. */
-.projects p{
+.projects p, .resumes p{
     display: none;
 }
 /* Using the + targeting the sibling container */
-.projects h3:hover+p
+.projects h3:hover+p, .resumes h3:hover+p
 {
         display: block;
         
@@ -174,7 +170,13 @@ h3{
 
 #contact li, #contact a{
     text-decoration: none;
-    color:rgb(82, 34, 34);
+    color: saddlebrown;
+    font-weight: bold;
+}
+
+#contact li:hover{
+    text-size-adjust: larger;
+    text-decoration: underline;
 }
 
 footer{
