@@ -30,4 +30,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Professional Portfolio
-    I first wrote out the general HTML containers and entered placeholder values
+    I first wrote out the general HTML containers and entered placeholder values to get a basic layout of my website.  After creating a nav bar with the appropriate links to the relevant sections, I worked on my CSS file to adjust the layout of the sections. I used CSS pseudo-classes to target the respective div classes to use the same properties across multiple tags. I created a responsive web design by using media query and rem units in my CSS.
+
+# Screenshot of Website
+
+# Live Link
+https://kumih0.github.io/mod-2-profesh-port/
+
+# Github Link
+https://github.com/kumih0/mod-2-profesh-port
