@@ -120,7 +120,7 @@ main section{
     justify-content: flex-end;
     border: 3px solid darkslategrey;
 }
-
+/* hiding link */
 .project a{
     text-decoration: none;
 }
