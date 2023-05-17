@@ -226,11 +226,18 @@ details[open] summary {
         display: flex;
         position: relative;
         flex-flow: wrap;
+        flex-direction: column;
         right: 75px;
     }
 
     .resumes{
         flex-direction: row;
+    }
+
+    #contact ul {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
     }
   }
   
