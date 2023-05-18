@@ -16,7 +16,9 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 ```
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+THEN I am presented with the developer's name, a recent photo or avatar, 
+and links to sections about them, 
+their work, and how to contact them
 WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
@@ -30,7 +32,10 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Professional Portfolio
-    I first wrote out the general HTML containers and entered placeholder values to get a basic layout of my website.  After creating a nav bar with the appropriate links to the relevant sections, I worked on my CSS file to adjust the layout of the sections. I used CSS pseudo-classes to target the respective div classes to use the same properties across multiple tags. I created a responsive web design by using media query and rem units in my CSS.
+    I first wrote out the general HTML containers and entered placeholder values to get a basic layout of my website.  
+    After creating a nav bar with the appropriate links to the relevant sections, I worked on my CSS file to adjust the layout of the sections. 
+    I used CSS pseudo-classes to target the respective div classes to use the same properties across multiple tags. 
+    I created a responsive web design by using media query and rem units in my CSS.
 
 # Screenshot of Website
 <img width="1709" alt="Screen Shot 2023-05-16 at 11 37 22 PM" src="https://github.com/kumih0/mod-2-profesh-port/assets/132851569/5ca882d6-cec0-48e4-8f68-2e9a66c3083c">
