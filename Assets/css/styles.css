@@ -43,14 +43,14 @@ nav a{
     font-size: 2rem;
     margin: 1vh 0 0 1vw;
 }
-
+/* When hovering over links in nav bar, they become bold, white, and underlined */
 nav a:hover{
     font-weight: bold;
     color: white;
     text-decoration: underline;
 
 }
-
+/* Banner image formatting to be consistent to screen size changes */
 figure{
     background-image: url("../images/banner.JPG");
     background-size: cover;
@@ -129,7 +129,7 @@ main section{
 .project:hover{
     box-shadow: inset 0px 0px 8px darksalmon, 0 0 15px darksalmon;
 }
-
+/* Added relevant background image to project 1 */
 #project1{
     flex: 1 0 100%;
     height: 300px;
@@ -173,7 +173,7 @@ h3{
     color: saddlebrown;
     font-weight: bold;
 }
-
+/* causes list items in contact section to become uppercase and underlined when the user hovers over them */
 #contact li:hover{
     text-transform: uppercase;
     text-decoration: underline;
@@ -186,19 +186,21 @@ footer{
     padding: 1rem;
 }
 
-/* details sectiion for drop down deets */
+/* Formatting style for details sectiion for drop down deets in both the bio and resumes section */
 details {
     border: 1px solid #aaa;
     border-radius: 4px;
     padding: 0.5em 0.5em 0;
 }
 
+/* Summary is the the container for the label text (like heading) */
 summary {
     font-weight: bold;
     margin: -0.5em -0.5em 0;
     padding: 0.5em;
 }
 
+/* Formatting style for both the details and summary appearance when clicked open */
 details[open] {
     padding: 0.5em;
 }
@@ -208,6 +210,7 @@ details[open] summary {
     margin-bottom: 0.5em;
 }
 
+/* layout changes for smaller screen sizes */
 @media screen and (max-width: 768px) {
     main,
     header, footer{
