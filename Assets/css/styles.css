@@ -136,6 +136,11 @@ main section{
     background-image: url("https://api.time.com/wp-content/uploads/2023/03/Numbers-Detox-Illustration.jpg?quality=85&w=2121");
 }
 
+#project2{
+    flex: 1 0 100%;
+    background-image: url("https://github.com/david-leverenz/day-after-tomorrow/assets/131185593/7dce690c-adf6-44da-81ac-b81c9ee32471");
+}
+
 h3{
     font-weight: bold;
     font-size: 1rem;
