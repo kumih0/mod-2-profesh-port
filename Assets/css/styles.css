@@ -141,6 +141,11 @@ main section{
     background-image: url("https://github.com/david-leverenz/day-after-tomorrow/assets/131185593/7dce690c-adf6-44da-81ac-b81c9ee32471");
 }
 
+#project3{
+    flex: 1 0 100%;
+    background-image: url("/Assets/images/Screen\ Shot\ 2023-07-06\ at\ 8.51.37\ PM.png")
+}
+
 h3{
     font-weight: bold;
     font-size: 1rem;
